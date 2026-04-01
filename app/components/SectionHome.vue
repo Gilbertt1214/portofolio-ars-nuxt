@@ -6,8 +6,9 @@
         <div
             class="max-w-6xl w-full flex flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-8 md:gap-12"
         >
+            <!-- Left Section -->
             <div
-                class="w-1/2 text-left border-[2px] sm:border-[4px] border-[#0a0a0a] bg-[#f5f0e8] p-3 sm:p-8 md:p-12 shadow-[3px_3px_0_#0a0a0a] sm:shadow-[8px_8px_0_#0a0a0a] flex flex-col justify-center relative transition-all duration-300"
+                class="flex-[1_1_50%] text-left border-[2px] sm:border-[4px] border-[#0a0a0a] bg-[#f5f0e8] p-3 sm:p-8 md:p-12 shadow-[3px_3px_0_#0a0a0a] sm:shadow-[8px_8px_0_#0a0a0a] flex flex-col justify-center relative transition-all duration-300"
             >
                 <div
                     class="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 bg-[#ff2d55] text-white text-[8px] sm:text-xs font-bold px-1.5 sm:px-3 py-1 border-[1.5px] sm:border-[3px] border-[#0a0a0a] tracking-widest uppercase"
@@ -67,9 +68,10 @@
                 </div>
             </div>
 
+            <!-- Right Section -->
             <div
                 data-aos="fade-left"
-                class="w-1/2 flex flex-col justify-center items-center mt-0"
+                class="flex-[1_1_50%] flex flex-col justify-center items-center mt-0"
             >
                 <div class="relative group w-full max-w-[280px] sm:max-w-sm mx-auto pr-1 pb-1 sm:pr-0 sm:pb-0">
                     <div
