@@ -26,15 +26,15 @@
                 <div class="brutal-info-card" data-aos="fade-right">
                     <div class="info-icon">✉</div>
                     <div class="info-label">EMAIL</div>
-                    <a href="mailto:aswaraay@gmail.com" class="info-value"
-                        >aswaraay@gmail.com</a
+                    <button @click="handleEmail" class="info-value"
+                        >aswaraay@gmail.com</button
                     >
                 </div>
                 <div class="brutal-info-card" data-aos="fade-left">
                     <Icon name="fa6-brands:whatsapp" class="info-icon" />
                     <div class="info-label">WHATSAPP</div>
-                    <a href="https://wa.me/+6281225842802" target="_blank" rel="noopener noreferrer" class="info-value"
-                        >+62 812-2584-2802</a
+                    <button @click="handleWhatsApp" class="info-value"
+                        >+62 812-2584-2802</button
                     >
                 </div>
             </div>
@@ -160,6 +160,14 @@ const submitForm = async (event) => {
         isSubmitting.value = false;
     }
 };
+
+const handleEmail = () => {
+    window.location.href = 'mailto:aswaraay@gmail.com';
+};
+
+const handleWhatsApp = () => {
+    window.open('https://wa.me/+6281225842802', '_blank');
+};
 </script>
 
 <style scoped>
@@ -255,6 +263,12 @@ const submitForm = async (event) => {
     display: block;
     transition: color 0.2s;
     word-break: break-all;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
