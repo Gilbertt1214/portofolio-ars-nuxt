@@ -56,14 +56,14 @@
                   </div>
 
                   <div class="project-links">
-                    <a v-if="project.repo" :href="project.repo" target="_blank" class="project-btn-small repo-btn" title="Github">
+                    <button v-if="project.repo" @click="openLink(project.repo)" class="project-btn-small repo-btn" title="Github">
                       <Icon name="fa6-brands:github" />
                       <span class="btn-label">Github</span>
-                    </a>
-                    <a v-if="project.live" :href="project.live" target="_blank" class="project-btn-small live-btn" title="Live Demo">
+                    </button>
+                    <button v-if="project.live" @click="openLink(project.live)" class="project-btn-small live-btn" title="Live Demo">
                       <Icon name="ph:arrow-square-out-bold" />
                       <span class="btn-label">Live</span>
-                    </a>
+                    </button>
                     <button @click="openProjectDetails(project)" class="project-btn-small details-btn" title="View Details">
                       <Icon name="ph:info-bold" />
                       <span class="btn-label">Details</span>
@@ -159,6 +159,10 @@ const openProjectDetails = (project) => {
   selectedProject.value = project;
   isModalOpen.value = true;
   document.body.style.overflow = 'hidden';
+};
+
+const openLink = (url) => {
+  window.open(url, '_blank');
 };
 
 const closeModal = () => {

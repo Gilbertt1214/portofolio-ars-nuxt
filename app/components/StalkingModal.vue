@@ -24,38 +24,34 @@
                 MY SOCIAL MEDIA
             </h2>
             <div class="flex flex-col gap-3 sm:gap-4">
-                <a
-                    href="https://www.instagram.com/aswaraay"
-                    target="_blank"
+                <button
+                    @click="openLink('https://www.instagram.com/aswaraay')"
                     class="flex items-center gap-3 sm:gap-4 p-2.5 sm:p-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#ffe066] text-[#0a0a0a] text-sm sm:text-base font-bold uppercase tracking-wider shadow-[3px_3px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#0a0a0a] transition-all duration-150"
                 >
                     <Icon name="fa6-brands:instagram" class="text-xl sm:text-2xl" />
                     <span>Instagram</span>
-                </a>
-                <a
-                    href="https://linkedin.com/in/aswaraayu"
-                    target="_blank"
+                </button>
+                <button
+                    @click="openLink('https://linkedin.com/in/aswaraayu')"
                     class="flex items-center gap-3 sm:gap-4 p-2.5 sm:p-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#89CFF0] text-[#0a0a0a] text-sm sm:text-base font-bold uppercase tracking-wider shadow-[3px_3px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#0a0a0a] transition-all duration-150"
                 >
                     <Icon name="fa6-brands:linkedin-in" class="text-xl sm:text-2xl" />
                     <span>LinkedIn</span>
-                </a>
-                <a
-                    href="https://www.tiktok.com/@corydoraw"
-                    target="_blank"
+                </button>
+                <button
+                    @click="openLink('https://www.tiktok.com/@corydoraw')"
                     class="flex items-center gap-3 sm:gap-4 p-2.5 sm:p-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#1a1a2e] text-[#f5f5f5] text-sm sm:text-base font-bold uppercase tracking-wider shadow-[3px_3px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#0a0a0a] transition-all duration-150"
                 >
                     <Icon name="fa6-brands:tiktok" class="text-xl sm:text-2xl" />
                     <span>TikTok</span>
-                </a>
-                <a
-                    href="https://github.com/awraay"
-                    target="_blank"
+                </button>
+                <button
+                    @click="openLink('https://github.com/awraay')"
                     class="flex items-center gap-3 sm:gap-4 p-2.5 sm:p-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#1a1a2e] text-[#f5f5f5] text-sm sm:text-base font-bold uppercase tracking-wider shadow-[3px_3px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#0a0a0a] transition-all duration-150"
                 >
                     <Icon name="fa6-brands:github" class="text-xl sm:text-2xl" />
                     <span>GitHub</span>
-                </a>
+                </button>
             </div>
         </div>
     </div>
@@ -70,4 +66,8 @@ defineProps({
 });
 
 defineEmits(["close"]);
+
+const openLink = (url) => {
+  window.open(url, '_blank');
+};
 </script>

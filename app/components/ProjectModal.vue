@@ -67,24 +67,22 @@
             </ul>
           </section>
           <section class="pt-3 sm:pt-4 border-t-2 border-[#0a0a0a] flex flex-col xs:flex-row flex-wrap gap-2 sm:gap-4">
-            <a
+            <button
               v-if="project?.repo"
-              :href="project.repo"
-              target="_blank"
+              @click="openLink(project.repo)"
               class="flex items-center justify-center xs:justify-start gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#1a1a2e] text-white text-xs sm:text-base font-bold uppercase tracking-wider shadow-[4px_4px_0_#0a0a0a] sm:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0_#0a0a0a] sm:hover:shadow-[8px_8px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-150"
             >
               <Icon name="fa6-brands:github" class="text-lg sm:text-xl" />
               <span>REPOSITORY</span>
-            </a>
-            <a
+            </button>
+            <button
               v-if="project?.live"
-              :href="project.live"
-              target="_blank"
+              @click="openLink(project.live)"
               class="flex items-center justify-center xs:justify-start gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 border-[2px] sm:border-[3px] border-[#0a0a0a] bg-[#ffe066] text-[#0a0a0a] text-xs sm:text-base font-bold uppercase tracking-wider shadow-[4px_4px_0_#0a0a0a] sm:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0_#0a0a0a] sm:hover:shadow-[8px_8px_0_#0a0a0a] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-150"
             >
               <Icon name="ph:arrow-square-out-bold" class="text-lg sm:text-xl" />
               <span>LIVE DEMO</span>
-            </a>
+            </button>
           </section>
         </div>
       </div>
@@ -105,6 +103,10 @@ defineProps({
 });
 
 defineEmits(["close"]);
+
+const openLink = (url) => {
+  window.open(url, '_blank');
+};
 
 const getIconName = (tech) => {
   const iconMap = {

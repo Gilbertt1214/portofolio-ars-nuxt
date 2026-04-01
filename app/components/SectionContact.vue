@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="form-group form-group-full">
-                        <label for="message" class="form-label">PESAN</label>
+                        <label for="message" class="form-label">MESSAGE</label>
                         <textarea
                             name="message"
                             id="message"
