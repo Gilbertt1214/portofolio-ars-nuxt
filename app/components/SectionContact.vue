@@ -99,7 +99,7 @@
                             id="message"
                             rows="5"
                             class="brutal-textarea"
-                            placeholder="Tulis pesan kamu di sini..."
+                            placeholder=" whrite your message here..."
                             required
                         ></textarea>
                     </div>
