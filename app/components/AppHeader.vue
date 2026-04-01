@@ -9,22 +9,22 @@
             class="container mx-auto flex justify-between items-center py-3 px-4 sm:px-7"
         >
             <div class="flex items-center gap-x-2">
-                <NuxtLink
-                    to="/"
+                <button
+                    @click="scrollToSection('#home')"
                     class="text-lg sm:text-xl font-bold text-[#0a0a0a] tracking-tight uppercase"
                 >
                    WELCOME
-                </NuxtLink>
+                </button>
             </div>
             <div class="hidden md:flex items-center gap-x-6">
                 <ul class="flex items-center space-x-2">
                     <li v-for="link in navLinks" :key="link.to">
-                        <NuxtLink
-                            :to="link.to"
+                        <button
+                            @click="scrollToSection(link.to)"
                             class="px-3 py-1 text-sm font-bold text-[#0a0a0a] uppercase border-2 border-transparent transition-all duration-200 hover:border-[#0a0a0a] hover:bg-[#ffe066] hover:shadow-[4px_4px_0_#0a0a0a] hover:-translate-y-1"
                         >
                             {{ link.label }}
-                        </NuxtLink>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -35,13 +35,12 @@
         >
             <ul class="flex flex-col bg-[#f5f0e8]">
                 <li v-for="link in navLinks" :key="link.to" class="border-b border-[#0a0a0a]/20 last:border-b-0">
-                    <NuxtLink
-                        :to="link.to"
-                        class="block px-6 py-3 text-sm font-bold text-[#0a0a0a] uppercase tracking-wider transition-all duration-200 hover:bg-[#ffe066] hover:pl-8"
-                        @click="menuOpen = false"
+                    <button
+                        @click="scrollToSection(link.to)"
+                        class="w-full text-left block px-6 py-3 text-sm font-bold text-[#0a0a0a] uppercase tracking-wider transition-all duration-200 hover:bg-[#ffe066] hover:pl-8"
                     >
                         {{ link.label }}
-                    </NuxtLink>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -73,6 +72,14 @@ import { useWindowScroll } from "@vueuse/core";
 const { y } = useWindowScroll();
 const isHidden = ref(false);
 const menuOpen = ref(false);
+
+const scrollToSection = (id) => {
+    const element = document.querySelector(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+    menuOpen.value = false;
+};
 
 const navLinks = [
     { to: "#home", label: "Home" },

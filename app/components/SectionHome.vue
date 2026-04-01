@@ -52,13 +52,12 @@
                     data-aos="fade-up"
                     class="mt-3 sm:mt-8 flex flex-row items-center gap-1.5 sm:gap-4 w-full"
                 >
-                    <NuxtLink
-                        to="https://canva.link/petrt5wkle3vojz"
-                        target="_blank"
+                    <button
+                        @click="openResume"
                         class="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-1 py-1.5 sm:px-6 sm:py-3 bg-[#ff2d55] text-white text-[8px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#e02849] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
                     >
                         <span>MYRESUME</span>
-                    </NuxtLink>
+                    </button>
                     <button
                         @click="$emit('openModal')"
                         class="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-1 py-1.5 sm:px-6 sm:py-3 bg-[#ffe066] text-[#0a0a0a] text-[8px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#ffd11a] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
@@ -94,4 +93,8 @@
 <script setup>
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 defineEmits(["openModal"]);
+
+const openResume = () => {
+    window.open("https://canva.link/petrt5wkle3vojz", "_blank");
+};
 </script>
