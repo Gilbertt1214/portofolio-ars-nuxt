@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+/* Global responsive base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar on mobile for cleaner look */
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
+::selection {
+  background-color: #A3FF12;
+  color: #0a0a0a;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #0a0a0a #f5f0e8;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f0e8;
+  border-left: 4px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff2d55;
+  border: 3px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe066;
+}
+
+::-webkit-scrollbar-corner {
+  background: #f5f0e8;
+}
+
+::-moz-selection {
+  background-color: #A3FF12;
+  color: black;
+}
+
+:root {
+    --radius: 0.5rem;
+    --background: #F9F5F2;
+    --foreground: #000000;
+    --muted: #EDE3FF;
+    --muted-foreground: #5B3B98;
+    --card: #FFFFFF;
+    --card-foreground: #000000;
+    --popover: #FFFFFF;
+    --popover-foreground: #000000;
+    --border: #000000;
+    --input: #FFFFFF;
+    --primary: #C4A1FF;
+    --primary-hover: #9678FF;
+    --primary-foreground: #000000;
+    --secondary: #E7F193;
+    --secondary-foreground: #000000;
+    --accent: #FE91E9;
+    --accent-foreground: #000000;
+    --destructive: #FE3B3B;
+    --destructive-foreground: #FFFFFF;
+    --ring: #000000;
+}
