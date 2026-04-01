@@ -59,15 +59,15 @@ import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 const faqs = [
     {
         question: "Where do you come from?",
-        answer: "I am from Rembang, Central Java and I now live in Solo.",
+        answer: "I am from Rembang, and I now live in Surakarta, Central Java",
     },
     {
         question: "what major are you in?",
-        answer: "My major is informatics engineering.",
+        answer: "My major is Informatics Engineering and I have 3 years of experience in web development. ",
     },
     {
         question: "What stack do you usually use?",
-        answer: "I usually use php, vue and python stack.",
+        answer: "I specialize in building modern and scalable web applications using PHP (Laravel), Vue (Nuxt), Node.js, Express.js, PostgreSQL, MySQL, and Python, supported by TypeScript and RESTful APIs.",
     },
 ];
 </script>
