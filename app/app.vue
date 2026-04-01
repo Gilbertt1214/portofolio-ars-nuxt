@@ -9,12 +9,18 @@ onMounted(() => {
 })
 
 useHead({
-    title: "PORTOFOLIO - ARS",
+    title: "PORTOFOLIO",
     meta: [
         {
             name: "description",
-            content:
-                "PORTOFOLIO - ARS",
+            content: "PORTOFOLIO - ARS",
+        },
+    ],
+    link: [
+        {
+            rel: "icon",
+            type: "image/png",
+            href: "/ars.png", 
         },
     ],
 });

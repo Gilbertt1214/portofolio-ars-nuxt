@@ -13,10 +13,9 @@
                     to="/"
                     class="text-lg sm:text-xl font-bold text-[#0a0a0a] tracking-tight uppercase"
                 >
-                    PORTOFOLIO
+                   WELCOME
                 </NuxtLink>
             </div>
-            <!-- Desktop Nav -->
             <div class="hidden md:flex items-center gap-x-6">
                 <ul class="flex items-center space-x-2">
                     <li v-for="link in navLinks" :key="link.to">
@@ -30,8 +29,6 @@
                 </ul>
             </div>
         </nav>
-
-        <!-- Mobile Menu -->
         <div
             class="md:hidden overflow-hidden transition-all duration-300 ease-in-out border-t-2 border-[#0a0a0a]"
             :class="menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 border-t-0'"
@@ -49,8 +46,6 @@
             </ul>
         </div>
     </header>
-
-    <!-- Floating Hamburger Button (mobile) -->
     <button
         class="md:hidden fixed top-3 right-4 sm:right-7 z-[60] flex flex-col justify-center items-center w-10 h-10 border-2 border-[#0a0a0a] bg-white shadow-[3px_3px_0_#0a0a0a] transition-all duration-200 hover:bg-[#ffe066]"
         @click="menuOpen = !menuOpen"
