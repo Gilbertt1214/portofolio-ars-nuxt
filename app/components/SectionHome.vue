@@ -1,13 +1,13 @@
 <template>
     <section
         id="home"
-        class="min-h-[60svh] sm:min-h-[100svh] flex items-start sm:items-center justify-center px-4 sm:px-6 pt-24 sm:pt-24 pb-10 sm:pb-12"
+        class="min-h-[60svh] sm:min-h-[100svh] flex items-start sm:items-center justify-center px-4 sm:px-6 pt-32 sm:pt-24 pb-10 sm:pb-12"
     >
         <div
-            class="max-w-6xl w-full flex flex-col-reverse sm:flex-row items-center sm:items-stretch justify-between gap-6 sm:gap-8 md:gap-12"
+            class="max-w-6xl w-full flex flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-8 md:gap-12"
         >
             <div
-                class="w-full sm:w-1/2 text-left border-[2px] sm:border-[4px] border-[#0a0a0a] bg-[#f5f0e8] p-4 sm:p-8 md:p-12 shadow-[3px_3px_0_#0a0a0a] sm:shadow-[8px_8px_0_#0a0a0a] flex flex-col justify-center relative transition-all duration-300"
+                class="w-1/2 text-left border-[2px] sm:border-[4px] border-[#0a0a0a] bg-[#f5f0e8] p-3 sm:p-8 md:p-12 shadow-[3px_3px_0_#0a0a0a] sm:shadow-[8px_8px_0_#0a0a0a] flex flex-col justify-center relative transition-all duration-300"
             >
                 <div
                     class="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 bg-[#ff2d55] text-white text-[8px] sm:text-xs font-bold px-1.5 sm:px-3 py-1 border-[1.5px] sm:border-[3px] border-[#0a0a0a] tracking-widest uppercase"
@@ -16,7 +16,7 @@
                 </div>
                 <h1
                     data-aos="fade-right"
-                    class="text-[2.5rem] sm:text-6xl lg:text-7xl font-['Bebas_Neue',sans-serif] text-[#0a0a0a] tracking-wide mt-4 sm:mt-0 mb-2 sm:mb-4 flex flex-col lg:flex-row items-start lg:items-center justify-start gap-1 lg:gap-6"
+                    class="text-[1.8rem] sm:text-6xl lg:text-7xl font-['Bebas_Neue',sans-serif] text-[#0a0a0a] tracking-wide mt-4 sm:mt-0 mb-2 sm:mb-4 flex flex-col lg:flex-row items-start lg:items-center justify-start gap-1 lg:gap-6"
                 >
                     <div class="flex flex-col items-start leading-[0.9]">
                         <span>HI I'M</span>
@@ -50,28 +50,28 @@
                 </div>
                 <div
                     data-aos="fade-up"
-                    class="mt-5 sm:mt-8 flex flex-row items-center gap-3 sm:gap-4 w-full"
+                    class="mt-3 sm:mt-8 flex flex-row items-center gap-1.5 sm:gap-4 w-full"
                 >
                     <button
                         @click="openResume"
-                        class="flex-1 inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 py-2.5 sm:px-6 sm:py-3 bg-[#ff2d55] text-white text-[10px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#e02849] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
+                        class="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-1 py-1.5 sm:px-6 sm:py-3 bg-[#ff2d55] text-white text-[8px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#e02849] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
                     >
-                        <span>MY RESUME</span>
+                        <span>MYRESUME</span>
                     </button>
                     <button
                         @click="$emit('openModal')"
-                        class="flex-1 inline-flex items-center justify-center gap-1.5 sm:gap-2 px-2 py-2.5 sm:px-6 sm:py-3 bg-[#ffe066] text-[#0a0a0a] text-[10px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#ffd11a] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
+                        class="flex-1 inline-flex items-center justify-center gap-1 sm:gap-2 px-1 py-1.5 sm:px-6 sm:py-3 bg-[#ffe066] text-[#0a0a0a] text-[8px] sm:text-sm font-bold uppercase tracking-wider border-[1.5px] sm:border-[3px] border-[#0a0a0a] shadow-[2px_2px_0_#0a0a0a] sm:shadow-[4px_4px_0_#0a0a0a] hover:bg-[#ffd11a] hover:shadow-[3px_3px_0_#0a0a0a] sm:hover:shadow-[6px_6px_0_#0a0a0a] hover:-translate-x-0.5 hover:-translate-y-0.5 active:shadow-[1px_1px_0_#0a0a0a] active:translate-x-0.5 active:translate-y-0.5 transition-all duration-150 text-center"
                     >
-                        <span>SOCIALS</span>
+                        <span>SOSMED</span>
                     </button>
                 </div>
             </div>
 
             <div
                 data-aos="fade-left"
-                class="w-full sm:w-1/2 flex flex-col justify-center items-center mt-0"
+                class="w-1/2 flex flex-col justify-center items-center mt-0"
             >
-                <div class="relative group w-full max-w-[185px] sm:max-w-sm mx-auto pr-1 pb-1 sm:pr-0 sm:pb-0">
+                <div class="relative group w-full max-w-[280px] sm:max-w-sm mx-auto pr-1 pb-1 sm:pr-0 sm:pb-0">
                     <div
                         class="absolute inset-0 bg-[#ffe066] border-[2px] sm:border-[4px] border-[#0a0a0a] translate-x-1.5 translate-y-1.5 sm:translate-x-4 sm:translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 sm:group-hover:translate-x-6 sm:group-hover:translate-y-6 transition-all duration-300"
                     ></div>

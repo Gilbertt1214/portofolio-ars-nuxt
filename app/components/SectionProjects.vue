@@ -6,7 +6,7 @@
           <span class="flex flex-col sm:flex-row items-center sm:inline-flex gap-4 sm:gap-7 md:gap-8">
             <span class="text-center sm:text-left">HIGHLIGHT<br class="hidden sm:block" /> PROJECTS</span>
                   <client-only>
-        <div class="w-52 sm:w-56 md:w-64 aspect-square shrink-0">
+        <div class="w-40 sm:w-48 md:w-56 aspect-square shrink-0">
           <DotLottieVue
             src="/Web-Dev.lottie"
             autoplay

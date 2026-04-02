@@ -2,14 +2,14 @@
     <div class="about-brutal">
         <BrutalHeader class="max-w-[760px] mx-auto !mb-[3rem] sm:!mb-[4rem]" label="ABOUT ME">
             <template #title>
-                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 sm:gap-7 md:gap-8">
-                    <span class="text-center sm:text-left leading-[0.9]">ASWARAY AYU<br />WULANDARI</span>
+                <span class="inline-flex items-center gap-4 sm:gap-7 md:gap-8">
+                    <span>ASWARAY AYU<br />WULANDARI</span>
                     <img
                         src="/assets/retropie.png"
                         class="w-16 sm:w-25 md:w-32 h-auto transition-all duration-300"
                         alt="Retropie icon"
                     />
-                </div>
+                </span>
             </template>
             <template #description>
                 Hi there, I'm Aswara Ayu Wulandari, a passionate full-stack
