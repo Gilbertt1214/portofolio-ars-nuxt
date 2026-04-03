@@ -16,7 +16,7 @@
                 </div>
                 <h1
                     data-aos="fade-right"
-                    class="text-5xl sm:text-6xl lg:text-7xl font-['Bebas_Neue',sans-serif] text-[#0a0a0a] tracking-wide mt-2 sm:mt-0 mb-3 sm:mb-4 flex flex-col lg:flex-row items-start lg:items-center justify-start gap-2 lg:gap-6"
+                    class="text-5xl sm:text-6xl lg:text-7xl font-['Bebas_Neue',sans-serif] text-[#0a0a0a] tracking-wide mt-2 sm:mt-0 mb-3 sm:mb-4 flex flex-row items-start lg:items-center justify-start gap-3 lg:gap-6"
                 >
                     <div class="flex flex-col items-start leading-[0.9]">
                         <span>HI I'M</span>
@@ -24,7 +24,7 @@
                     </div>
                     <client-only>
                         <div
-                            class="w-32 sm:w-40 md:w-48 lg:w-64 shrink-0 -mt-2 lg:-mt-6 self-start lg:self-auto"
+                            class="w-28 sm:w-32 md:w-40 lg:w-64 shrink-0 -mt-1 lg:-mt-6"
                         >
                             <DotLottieVue
                                 src="/Cat-Movement.lottie"
