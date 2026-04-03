@@ -1,7 +1,7 @@
 <template>
     <section
         id="home"
-        class="min-h-[60svh] sm:min-h-[100svh] flex items-start sm:items-center justify-center px-4 sm:px-6 pt-32 sm:pt-24 pb-10 sm:pb-12"
+        class="min-h-[60svh] sm:min-h-[100svh] flex items-start sm:items-center justify-center px-4 sm:px-6 pt-32 sm:pt-24 pb-10 sm:pb-12  overflow-x-hidden"
     >
         <div
             class="max-w-6xl w-full flex flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-8 md:gap-12"

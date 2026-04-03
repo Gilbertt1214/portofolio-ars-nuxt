@@ -2,9 +2,7 @@
     <header
         class="fixed top-0 left-0 right-0 z-50 bg-[#f5f0e8] border-b-4 border-[#0a0a0a] transition-all duration-300 transform"
         :class="
-            isHidden && !menuOpen ? '-translate-y-full invisible' : 'translate-y-0 visible'
-        "
-    >
+            isHidden && !menuOpen ? '-translate-y-full invisible' : 'translate-y-0 visible' ">
         <nav
             class="container mx-auto flex justify-between items-center py-3 px-4 sm:px-7"
         >
