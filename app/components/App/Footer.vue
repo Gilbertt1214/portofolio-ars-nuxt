@@ -5,7 +5,7 @@
         <div
             class="container mx-auto px-4 text-center text-xs sm:text-sm font-bold text-[#0a0a0a] uppercase tracking-wider sm:tracking-widest"
         >
-            &copy; 2026 MY PORTOFOLIO. All rights reserved.
+            &copy; 2026 ASWARAY AYU WULANDARI. All rights reserved.
         </div>
     </footer>
 </template>
