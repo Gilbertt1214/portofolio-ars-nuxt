@@ -1,11 +1,11 @@
 <template>
     <div class="about-brutal">
-        <BrutalHeader class="max-w-[760px] mx-auto !mb-[3rem] sm:!mb-[4rem]" label="ABOUT ME">
+        <BaseBrutalHeader class="max-w-[760px] mx-auto !mb-[3rem] sm:!mb-[4rem]" label="ABOUT ME">
             <template #title>
                 <span class="inline-flex items-center gap-4 sm:gap-7 md:gap-8">
                     <span>ASWARAY AYU<br />WULANDARI</span>
                     <img
-                        src="/assets/retropie.png"
+                        src="/assets/Retropie.svg"
                         class="w-16 sm:w-25 md:w-32 h-auto transition-all duration-300"
                         alt="Retropie icon"
                     />
@@ -24,7 +24,7 @@
                 logic — it's about blending creativity and technology to bring
                 meaningful ideas to life.
             </template>
-        </BrutalHeader>
+        </BaseBrutalHeader>
         <div class="brutal-accordion-wrapper" data-aos="fade-up">
             <div class="section-label">FAQ // 01</div>
             <details

@@ -1,7 +1,7 @@
 <template>
     <div class="brutal-certified">
         <div class="brutal-certified-container">
-            <BrutalHeader label="CERTIFIED">
+            <BaseBrutalHeader label="CERTIFIED">
                 <template #title>
                     <span class="flex flex-col sm:flex-row items-center sm:inline-flex gap-4 sm:gap-7 md:gap-8">
                         <span class="text-center sm:text-left">MY<br class="hidden sm:block" /> CERTIFICATIONS</span>
@@ -22,7 +22,7 @@
                     Explore the official certifications and professional
                     achievements I've earned throughout my coding journey.
                 </template>
-            </BrutalHeader>
+            </BaseBrutalHeader>
             <div class="brutal-cert-grid">
                 <div
                     v-for="(cert, index) in visibleCerts"

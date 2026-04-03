@@ -13,7 +13,7 @@
         <section id="contact">
             <SectionContact />
         </section>
-        <StalkingModal :isOpen="showModal" @close="showModal = false" />
+        <ModalStalking :isOpen="showModal" @close="showModal = false" />
     </div>
 </template>
 

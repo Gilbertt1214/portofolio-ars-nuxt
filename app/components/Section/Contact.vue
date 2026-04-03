@@ -1,27 +1,29 @@
 <template>
     <div class="brutal-contact">
         <div class="brutal-contact-container">
-            <BrutalHeader label="CONTACT">
+            <BaseBrutalHeader label="CONTACT">
                 <template #title>
                     <span
                         class="flex flex-col sm:flex-row items-center sm:inline-flex gap-4 sm:gap-7 md:gap-8"
                     >
                         <span class="text-center sm:text-left">CONTACT<br class="hidden sm:block" /> ME</span>
-                        <div class="w-56 sm:w-64 md:w-72 shrink-0 -mb-8 sm:-mb-12 md:-mb-16">
-                            <DotLottieVue
-                                src="/Cat.lottie"
-                                autoplay
-                                loop
-                                class="w-full h-auto object-contain"
-                            />
-                        </div>
+                        <client-only>
+                            <div class="w-56 sm:w-64 md:w-72 shrink-0 -mb-8 sm:-mb-12 md:-mb-16">
+                                <DotLottieVue
+                                    src="/Cat.lottie"
+                                    autoplay
+                                    loop
+                                    class="w-full h-auto object-contain"
+                                />
+                            </div>
+                        </client-only>
                     </span>
                 </template>
                 <template #description>
                     Have questions or want to chat? Don't hesitate to contact me
                     using the form below or contact me directly.
                 </template>
-            </BrutalHeader>
+            </BaseBrutalHeader>
             <div class="brutal-info-grid">
                 <div class="brutal-info-card" data-aos="fade-right">
                     <div class="info-icon">✉</div>

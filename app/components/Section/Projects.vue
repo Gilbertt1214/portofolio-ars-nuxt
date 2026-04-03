@@ -1,7 +1,7 @@
 <template>
   <div class="brutal-projects">
     <div class="brutal-projects-container">
-      <BrutalHeader label="PROJECTS">
+      <BaseBrutalHeader label="PROJECTS">
         <template #title>
           <span class="flex flex-col sm:flex-row items-center sm:inline-flex gap-4 sm:gap-7 md:gap-8">
             <span class="text-center sm:text-left">HIGHLIGHT<br class="hidden sm:block" /> PROJECTS</span>
@@ -21,7 +21,7 @@
         <template #description>
           These are some of the projects I have created. These projects have not only helped me build my portfolio, but also enhanced the skills I have developed.
         </template>
-      </BrutalHeader>
+      </BaseBrutalHeader>
 
       <div class="brutal-carousel-outer" data-aos="fade-up">
         <button class="nav-btn nav-prev" @click="prevProject" aria-label="Previous Project">
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <ProjectModal
+    <ModalProject
       :isOpen="isModalOpen"
       :project="selectedProject"
       @close="closeModal"
